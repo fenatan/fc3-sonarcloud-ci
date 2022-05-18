@@ -1,4 +1,4 @@
-const MergeSort = require('./mergeSort');
+const MergeSort = require('../mergeSort');
 
 describe('MergeSort', () => {
     it('should sort an array', () => {
