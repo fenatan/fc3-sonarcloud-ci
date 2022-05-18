@@ -10,11 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 14
       - name: Install dependencies
-        run: npm install
+        run:  npm install
+      - name: Install Jest globally
+        run:  sudo npm install -g jest
       - name: Unit tests
         run: npm test
       - name: SonarCloud Scan
